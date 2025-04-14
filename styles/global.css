@@ -1,0 +1,112 @@
+:root {
+    --nav-bg-color: #545253;
+
+    --call-to-action: 246, 147, 29;
+    --highlight-color: #A0BC57;
+
+    --text-color: #545253;
+
+
+    --anchor-color: #6EB7C2;
+    --anchor-color--visited:#6e8ec2;
+
+    --error-color: #D50303;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+#pageContent{
+    padding-top: 110px;
+    position: relative;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#background{
+    position: fixed;
+    inset: 0;
+    height: 100%;
+    background-image: url("../assets/bg.png");
+    background-repeat: repeat;
+    animation: backgroundColorPulse 10s ease-in-out infinite;
+    z-index: -1;
+}
+
+#backgroundGradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(0deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h5 {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--highlight-color);
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 0.88rem;
+    font-weight: 400;
+}
+
+a {
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--anchor-color);
+}
+
+a:visited {
+    color: var(--anchor-color--visited);
+}
+
+input{
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+@keyframes backgroundColorPulse {
+    0%, 100% {
+        background-color: #ECF8FB;
+    }
+    50% {
+        background-color: #EFEFEF;
+    }
+}
+
